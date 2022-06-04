@@ -1,4 +1,3 @@
-# house-pricing
 ## Dashboard 
 ### Tool(s) that will be used to create the final dashboard
 - HTML
