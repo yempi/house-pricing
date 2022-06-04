@@ -1,4 +1,4 @@
-# house-pricing predi
+# house-pricing predictor
 ## Authors
 - Rafael
 - Yesenia
