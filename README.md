@@ -59,3 +59,4 @@ c.execute("SELECT name FROM sqlite_master WHERE type='table';")
 print(c.fetchall())
 ```
 
+After creating the sqlite file, we connect this database in JavaScript to add functionality to the webpage, a style.css to add design to our webpage and an index.html to display the view and add the visual part of the page.  
