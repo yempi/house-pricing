@@ -30,17 +30,17 @@ Other questions that can be answered from this model is which variables account 
 
 ## Description of the communication protocols
 To connect the database to the machine learning model we are going to use the library SQLAlchemy and sqlite3.  The first step is to import the library to the file we are working. For the case of the sqlite3, we start by connecting to the database and saving those instructions in an object. In this example we are using the variable “conn” to connect to the database called 'db2_w2tables.sqlite' using the method connect of the sqlite3 library. Here is the code:
-
-  conn = sqlite3.connect('db2_w2tables.sqlite')
-  
+```
+conn = sqlite3.connect('db2_w2tables.sqlite')
+```
 Then we use the the cursor method to navigate throw the database we just connected to, and save it to an object, in this case it is called c. Here is the code:
-
+```
 c = conn.cursor()
-
+```
 When we want to make queries or retrieve the data from the database, we use the method .execute on the object we saved the cursor. For example, to get the names of the tables we use the code:
-
+```
 c.execute("SELECT name FROM sqlite_master WHERE type='table';")
 
 print(c.fetchall())
-
+```
 ## Outline of the project
