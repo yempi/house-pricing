@@ -43,3 +43,4 @@ c.execute("SELECT name FROM sqlite_master WHERE type='table';")
 
 print(c.fetchall())
 
+## Outline of the project
