@@ -1,4 +1,4 @@
-# house-pricing predictor
+# House Pricing Predictor
 ## Authors
 - Rafael
 - Yesenia
@@ -11,6 +11,20 @@ In this project we are developing a machine learning algorithm. The target varia
 ## Reasons for choosing the topic
 
 We selected to apply it to real Estate because of the availability of reliable information, and the importance of the housing market for the economy. When looking for a house, it is not easy to know if the house that you are interested in investing in is worth it. Also, there is a debate about whether or not there are bubbles in these assets, so our algorithm can help us have an informed opinion in the topic. 
+
+
+## Outline of the project
+The project can be divided in the following stages:
+•	Data Preprocessing
+•	Data Storage
+•	Data Retrieving
+•	Machine Learning 
+•	Dashboard
+
+
+![Outline of the project](https://user-images.githubusercontent.com/96758511/172086634-d59b14e3-1128-4275-8fe7-9032493721b1.png)
+
+
 
 ## Description of data source
 
@@ -28,6 +42,7 @@ The target variable of our Machine Learning Algorithm would be the sale price of
 Other questions that can be answered from this model is which variables account for a higher prediction weight, and which ones are neglectable for this analysis. 
 
 
+
 ## Description of the communication protocols
 To connect the database to the machine learning model we are going to use the library SQLAlchemy and sqlite3.  The first step is to import the library to the file we are working. For the case of the sqlite3, we start by connecting to the database and saving those instructions in an object. In this example we are using the variable “conn” to connect to the database called 'db2_w2tables.sqlite' using the method connect of the sqlite3 library. Here is the code:
 ```
@@ -43,4 +58,4 @@ c.execute("SELECT name FROM sqlite_master WHERE type='table';")
 
 print(c.fetchall())
 ```
-## Outline of the project
+
