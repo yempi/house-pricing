@@ -11,7 +11,11 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <link rel="stylesheet" href="static/css/style.css">
+    <script src="script.js"></script>
     
     <body>
         <div class="wrapper">
@@ -25,39 +29,48 @@
             </div>
           <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
-                    <p> Filter Search</P>
+                <div class="col-md-2 filter">
+                    <p></p><p></p><p></p>
+                    <p> Filters</p>
+                        <!-- Add dropdown filter # of bedrooms-->
+                        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+                        <div id="info" class="panel-body">
 
+
+                        </div> 
                 </div>
-
                 
-                <div class="col-md-3">
+                <div class="col-md-2 matching-houses">
                     <p> matching houses</P>
                 
                 </div>
 
-                <div class="col-md-5">
+                <div class="col-md-2 prices">
                     <p> prices</P>
                 
                 </div>
+            </div>
 
-
+            <div class="row">
                 <!--Second row-->
-                <div class="col-md-4">
+                <div class="col-md-3">
+
                 
                 </div>
 
 
-                <div class="col-md-4">
+                <div class="col-md-2 price-graph">
                     <p> year vs price graph</P>
                 
                 </div>
 
-                <div class="col-md-4">
-                    <p> article about house market in 2022 </p>
+                <div class="col-md-3 article" >
+                    <p></p>
+                    <p> Article about house market in 2022 </p>
                 </div>
 
 
+            </div>
             </div>
         </div>
 
