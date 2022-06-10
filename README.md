@@ -4,11 +4,11 @@ In this project we are developing a machine learning algorithm. The target varia
 We selected to apply it to real Estate because of the availability of reliable information, and the importance of the housing market for the economy. When looking for a house, it is not easy to know if the house that you are interested in investing in is worth it. Also, there is a debate about whether or not there are bubbles in these assets, so our algorithm can help us have an informed opinion in the topic. 
 
 The project can be divided in the following stages:
-•	Data Preprocessing
-•	Data Storage
-•	Data Retrieving
-•	Machine Learning 
-•	Dashboard
+- Data Preprocessing
+- Data Storage
+- Data Retrieving
+- Machine Learning 
+- Dashboard
 
 ![Outline of the project](https://user-images.githubusercontent.com/96758511/172086634-d59b14e3-1128-4275-8fe7-9032493721b1.png)
 
@@ -85,4 +85,4 @@ A presentation of this project was made in Google Slides explaining the followin
 - Description of analysis phase
 - Technologies, languages, tools, and algorithms used throughout the project
 
-You can access the slides by clicking [here].(https://docs.google.com/presentation/d/10Qn2gBFz0FcY4KZFFshbPOlhxJnvqyFBW7iNMLnvhw0/edit?usp=sharing)
+You can access the slides by clicking [here](https://docs.google.com/presentation/d/10Qn2gBFz0FcY4KZFFshbPOlhxJnvqyFBW7iNMLnvhw0/edit?usp=sharing).
