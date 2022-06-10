@@ -27,3 +27,9 @@ We used a Balanced Random Forest Classifier. This model helps us to make a class
 
 On the limitations side, we have that it doesn’t give us a specific value, but rather it outputs to which class a property would belong.
 Some of the benefits of a Balanced Random Forest Classifier This is a very robust machine learning algorithm, can handle big amounts of data and has a high precision. 
+
+### Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)
+
+### Description of how they have trained the model thus far, and any additional training that will take place
+
+### Description of current accuracy score
