@@ -20,7 +20,6 @@ Some of the features are categorical variables and other continuous. From a data
 
 It is a challenging and sufficient dataset for our purpose. 
 
-
 ### Questions to answer with the data
 The target variable of our Machine Learning Algorithm would be the sale price of a Real Estate asset. The features that would be input for the model would be the characteristics of the property, like the living area above ground, the number of rooms, bathrooms, quality of materials, as well as other characteristics of the surroundings. 
 Other questions that can be answered from this model is which variables account for a higher prediction weight, and which ones are neglectable for this analysis. 
@@ -86,3 +85,27 @@ A presentation of this project was made in Google Slides explaining the followin
 - Technologies, languages, tools, and algorithms used throughout the project
 
 You can access the slides by clicking [here](https://docs.google.com/presentation/d/10Qn2gBFz0FcY4KZFFshbPOlhxJnvqyFBW7iNMLnvhw0/edit?usp=sharing).
+
+## Dashboard 
+### Tool(s) that will be used to create the final dashboard
+- HTML
+- JavaScript 
+  - D3 
+
+### Interactive elements
+- Filters 
+
+The user will be selecting number of bedrooms, full and half-baths, number of cars that fit in the garage and a range of prices with those characteristics.
+
+- Text/Drop down menu
+
+After selecting the characteristics wanted for a house are selected it will narrow down the number of houses to look at that will be available to select in the drop down menu and it will give the characteristics for each house.
+
+- Price vs square ft graph
+
+It will gather the information of the resulting houses from the narrow down done in the filters part and display it as a visualization of the increase/decrease of prices according to the square footage.
+
+### Storyboard
+<img width="990" alt="171526329-84ea9f74-b3b8-4bf9-9d93-51a41757508f" src="https://user-images.githubusercontent.com/83614893/171978537-7fe11c7e-1131-476f-bf2c-804a1daa733e.png">
+
+> Figure 1. Dashboard's Storyboard
