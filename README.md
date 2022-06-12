@@ -85,6 +85,25 @@ We used a Balanced Random Forest Classifier. This model helps us to make a class
 On the limitations side, we have that it doesn’t give us a specific value, but rather it outputs to which class a property would belong.
 Some of the benefits of a Balanced Random Forest Classifier This is a very robust machine learning algorithm, can handle big amounts of data and has a high precision. 
 
+### Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)
+
+From module 2 to module 3 we add another model.  We used the Balanced Random Forest Classifier to determine which categories of features where the most important in that analysis. Then we add that categories to the Multiple Linear Regression analysis, which was the one we added. 
+
+For the Multiple Linear Regression analysis, we used the most relevant features from the machine learning and the house features that are more common when selecting a house. Like size, number of bedrooms number of bathrooms, number of cars that can be in the garage. 
+
+
+### Description of how they have trained the model thus far, and any additional training that will take place
+
+The Machine Learning model was trained with the default parameters of the Balanced Random Forest Classifier from imblearn library, which are 75% of the data for training and 25% of the data for testing. The Multiple Linear Regression Model in R, was also done with the default parameters. And the model  Linear Regression from sklearn library was trained with 80 % of the data and tested with 20%.
+
+### Description of current accuracy score
+
+The first analysis was the Balanced Random Forest Classifier from imblearn library, gave a balanced accuracy score of 0.836, which is a pretty high score, considering the maximum is 1.
+
+ Multiple Linear Regression Model in R gave an r squared of 0.72, which is interpreted as the model can explain 72% of the price forecast. 
+
+And the model Linear Regression from sklearn library had an r squared of 0.74 which is interpreted as the model can explain 74% of the price forecast. 
+
 ## Presentation
 A presentation of this project was made in Google Slides explaining the following points:
 - Selected Topic
