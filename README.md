@@ -18,11 +18,22 @@ In a search for information that we can use to train our machine learning algori
 The data set we are considering to use to train the machine learning model has 1460 data points, and is according to the requirement of 1000 data points. It has 81 columns from which 1 would be the target, the sale price, and the remaining 80 are potential features. 
 Some of the features are categorical variables and other continuous. From a data set exploration, we can see that there are missing values in some rows as well as NA, this will be handled in the preprocessing stage. 
 
+Data Source: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
+
 It is a challenging and sufficient dataset for our purpose. 
 
 ### Questions to answer with the data
 The target variable of our Machine Learning Algorithm would be the sale price of a Real Estate asset. The features that would be input for the model would be the characteristics of the property, like the living area above ground, the number of rooms, bathrooms, quality of materials, as well as other characteristics of the surroundings. 
 Other questions that can be answered from this model is which variables account for a higher prediction weight, and which ones are neglectable for this analysis. 
+
+### Communication protocol
+
+We have a team WhatsApp group in which we can share links, documents or have conversations in real time. 
+
+Meetings in zoom are being held during the class sessions, those have been very important for our organization. 
+
+Slack messages are also another communication mean that has been used to reach team members. 
+
 
 # Database
 ### Description of the data 
