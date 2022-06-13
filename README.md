@@ -142,7 +142,8 @@ You can access the slides by clicking [here](https://docs.google.com/presentatio
 ### Tool(s) used
 - HTML
 - JavaScript 
-  - D3 
+- Css
+- Tableau
 
 ### Interactive elements
 - Filters 
