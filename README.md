@@ -77,6 +77,7 @@ The amount of data we are using for this project is not very large. That’s why
 The Database stores the data after it has been cleaned and transformed. The data is stored in two tables, for convenience in the fusion they were called table_1 and table_2. The database was created using the library SQLite3 and after the data is saved, it is retrieved using SQLAlquemy and the fusion is done with this library.
 
 
+
 # Machine Learning Model
 
 ### Data preprocessing
@@ -160,5 +161,4 @@ It will gather the information of the resulting houses from the narrow down done
 
 ### Storyboard
 <img width="990" alt="171526329-84ea9f74-b3b8-4bf9-9d93-51a41757508f" src="https://user-images.githubusercontent.com/83614893/171978537-7fe11c7e-1131-476f-bf2c-804a1daa733e.png">
-
 
