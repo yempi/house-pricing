@@ -18,22 +18,17 @@ In a search for information that we can use to train our machine learning algori
 The data set we are considering to use to train the machine learning model has 1460 data points, and is according to the requirement of 1000 data points. It has 81 columns from which 1 would be the target, the sale price, and the remaining 80 are potential features. 
 Some of the features are categorical variables and other continuous. From a data set exploration, we can see that there are missing values in some rows as well as NA, this will be handled in the preprocessing stage. 
 
-Data Source: https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
+It is a challenging and sufficient dataset for our purpose. To consult the data source click [here](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data).
 
-It is a challenging and sufficient dataset for our purpose. 
 
 ### Questions to answer with the data
-The target variable of our Machine Learning Algorithm would be the sale price of a Real Estate asset. The features that would be input for the model would be the characteristics of the property, like the living area above ground, the number of rooms, bathrooms, quality of materials, as well as other characteristics of the surroundings. 
-Other questions that can be answered from this model is which variables account for a higher prediction weight, and which ones are neglectable for this analysis. 
+The target variable of our Machine Learning Algorithm would be the sale price of a Real Estate asset. The features that would be input for the model would be the characteristics of the property, like the living area above ground, the number of rooms, bathrooms, quality of materials, as well as other characteristics of the surroundings. Other questions that can be answered from this model is which variables account for a higher prediction weight, and which ones are neglectable for this analysis. 
 
 ### Communication protocol
 
 We have a team WhatsApp group in which we can share links, documents or have conversations in real time. 
-
 Meetings in zoom are being held during the class sessions, those have been very important for our organization. 
-
 Slack messages are also another communication mean that has been used to reach team members. 
-
 
 # Database
 ### Description of the data 
@@ -85,9 +80,8 @@ We used a Balanced Random Forest Classifier. This model helps us to make a class
 On the limitations side, we have that it doesn’t give us a specific value, but rather it outputs to which class a property would belong.
 Some of the benefits of a Balanced Random Forest Classifier This is a very robust machine learning algorithm, can handle big amounts of data and has a high precision. 
 
-### Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)
-
-From module 2 to module 3 we add another model.  We used the Balanced Random Forest Classifier to determine which categories of features where the most important in that analysis. Then we add that categories to the Multiple Linear Regression analysis, which was the one we added. 
+### Explanation of changes in model choice
+From module 2 to module 3 we added another model.  We used the Balanced Random Forest Classifier to determine which categories of features where the most important in that analysis. Then we added those categories to the Multiple Linear Regression analysis, which was the one we added. 
 
 For the Multiple Linear Regression analysis, we used the most relevant features from the machine learning and the house features that are more common when selecting a house. Like size, number of bedrooms number of bathrooms, number of cars that can be in the garage. 
 
@@ -96,7 +90,7 @@ For the Multiple Linear Regression analysis, we used the most relevant features 
 
 The Machine Learning model was trained with the default parameters of the Balanced Random Forest Classifier from imblearn library, which are 75% of the data for training and 25% of the data for testing. The Multiple Linear Regression Model in R, was also done with the default parameters. And the model  Linear Regression from sklearn library was trained with 80 % of the data and tested with 20%.
 
-### Description of current accuracy score
+### Current accuracy score
 
 The first analysis was the Balanced Random Forest Classifier from imblearn library, gave a balanced accuracy score of 0.836, which is a pretty high score, considering the maximum is 1.
 
