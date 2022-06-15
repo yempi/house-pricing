@@ -5,22 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House Pricing Predictor</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <link rel="stylesheet" href="static/css/style.css">
-    <script src="static/js/script.js"></script>
     
+    
+    <script src="../static/js/script.js"></script>
     <body>
         <div class="wrapper">
             <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">H</a>
+                <a class="navbar-brand" href="/exploratory_analysis">Exploratory analysis</a>
             </nav>
         </div>
         <div class="jumbotron " >
@@ -28,10 +24,168 @@
 
             
             </div>
-            <div class='tableauPlaceholder' id='viz1655106556103' style='position: relative'><noscript><a href='#'><img alt='House Pricing Predictor ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HousePricing_16551057154970&#47;HousePricingPredictor&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HousePricing_16551057154970&#47;HousePricingPredictor' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HousePricing_16551057154970&#47;HousePricingPredictor&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es-ES' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1655106556103');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1127px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <div class="grid-container">
+              <div class="one">
+                  <br>
+                  <h4> Filters</h4>
+
+                  Number of bedrooms <br>
+                  <select id="bedroom" aria-label="Default select example">
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                  <br>
+                  <br> Number of bathrooms <br>
+                  <select id="bathrooms" aria-label="Default select example">
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                  <br>
+                  <br> Number of cars in Garage <br>
+                  <select id="cars" aria-label="Default select example">
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                <br>
+                <br>Condition of the house <br>
+                  <select id="condition" aria-label="Default select example">
+                    <option selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                  <br>
+                  <br> Heating Quality <br>
+                  <select id="heatingQuality" aria-label="Default select example">
+                    <option selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                  <br>
+                  <br> Kitchen Quality <br>
+                  <select id="kitchenQuality" aria-label="Default select example">
+                    <option selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                  <br><br> Sqm Surface of the House <br>
+                  <!-- Range slider sqm -->
+                  <input id="sqm" type="range" min="0" max="550" value="0" step="10" list="tickmarks" onChange="change();">
+                  <datalist id="mine">
+                    <option>0</option>
+                    <option>25</option>
+                    <option>50</option>
+                    <option>75</option>
+                    <option>100</option>
+                  </datalist> <br><span id="result">0m2</span>
+                  <br><br>
+                  
+                  <!-- Button calculate price -->
+                  <button type="button" class="btn btn-dark" onclick="getSelectValue()">Calculate price</button>
+                  <br>
+              </div>
+              <div class="two">
+                <br>
+                <h3>House Description</h3>
+                  <span id="description">
+
+                  </span>
 
               </div>
+              <div class="three"> <br><br><h1>Total price: <br><span id="price"> </span> </h1>
+                  
+              </div>  
+              <div class="four"> 
 
+                <img src="../static/images/Plot Living Space vs Sale Price.jpg" style="width:100%; height:100%">
+              </div>
+              <div class="five"><br> <h3>Article</h3>
+
+                <!-- Insert here Article-->
+
+
+              </div>
+            </div>
+            <br>
+
+
+            <br>
+
+          <script>
+            function getSelectValue(){
+              var sqm = 0;
+              var bedrooms = document.getElementById("bedroom").value;
+              var bathrooms = document.getElementById("bathrooms").value;
+              var cars = document.getElementById("cars").value;
+              var condition = document.getElementById("condition").value;
+              var heatingQuality = document.getElementById("heatingQuality").value;
+              var kitchenQuality = document.getElementById("kitchenQuality").value;
+              var sqm = document.getElementById("sqm").value;
+
+
+              
+
+              totalPrice = -2012502 + (34415.2 * condition) + (111610 * heatingQuality) + (16447.7 * sqm) + (105166 * bathrooms) - (241039 * bedrooms) + (645464.5 * kitchenQuality) + (507545.2 * cars);
+              console.log(totalPrice);
+              
+
+              totalPrice = totalPrice.toLocaleString('en-US');
+              if (sqm == 0){
+                totalPrice = 0;
+                condition = 0;
+                kitchenQuality = 0;
+                heatingQuality = 0;
+              }
+              document.getElementById("description").innerHTML = "Number of Bedrooms: " + bedrooms + "<br Number of Bathrooms: " + bathrooms + "<br> Number of Cars in Garage: " + cars + "<br> House condition: " + condition + "<br> Heating Quality: " + heatingQuality + "<br> Sqm Surface: " + sqm + "<br> Kitchen Quality: " + heatingQuality + " <br> Total price: " +   totalPrice + " MXN <p>";
+              document.getElementById("price").innerHTML =  totalPrice + " MXN";
+              }
+      
+
+              
+
+              var result = document.getElementById("result");
+              var mine = document.getElementById("sqm");
+              function change(){
+                  result.innerText = mine.value + "m2";
+              }
+          </script>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+        <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"
+        />
     </body>
 
 </head>
