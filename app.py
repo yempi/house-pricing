@@ -8,3 +8,7 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+
+@app.route('/exploratory_analysis')
+def dashboard():
+    return render_template("dashboard.html")
