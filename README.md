@@ -34,19 +34,22 @@ From module 2 to module 3 we added another model.  We used the Balanced Random F
 For the Multiple Linear Regression analysis, we used the most relevant features from the machine learning and the house features that are more common when selecting a house. Like size, number of bedrooms number of bathrooms, number of cars that can be in the garage. 
 
 
-### Model Training
+### Description of how model was trained (or retrained, if they are using an existing model)
 
 The Machine Learning model was trained with the default parameters of the Balanced Random Forest Classifier from imblearn library, which are 75% of the data for training and 25% of the data for testing. The Multiple Linear Regression Model in R, was also done with the default parameters. And the model  Linear Regression from sklearn library was trained with 80 % of the data and tested with 20%.
 
-### Accuracy Score
+### Description and explanation of model’s confusion matrix, including final accuracy score
 
 The first analysis was the Balanced Random Forest Classifier from imblearn library, gave a balanced accuracy score of 0.836, which is a pretty high score, considering the maximum is 1.
 
- Multiple Linear Regression Model in R gave an r squared of 0.72, which is interpreted as the model can explain 72% of the price forecast. 
+
+Here we can se the confusion matrix with the test data.
+
+![Confusion Matrix](https://user-images.githubusercontent.com/96758511/173941273-73518ed8-f385-475d-867e-b3e010e3dae4.png)
+
+Confusion Matrix
+
+
+Multiple Linear Regression Model in R gave an r squared of 0.72, which is interpreted as the model can explain 72% of the price forecast. 
 
 And the model Linear Regression from sklearn library had an r squared of 0.74 which is interpreted as the model can explain 74% of the price forecast. 
-
-### Description of how model was trained (or retrained, if they are using an existing model)
-
-### Description and explanation of model’s confusion matrix, including final accuracy score
-
