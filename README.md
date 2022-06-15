@@ -46,3 +46,7 @@ The first analysis was the Balanced Random Forest Classifier from imblearn libra
 
 And the model Linear Regression from sklearn library had an r squared of 0.74 which is interpreted as the model can explain 74% of the price forecast. 
 
+### Description of how model was trained (or retrained, if they are using an existing model)
+
+### Description and explanation of model’s confusion matrix, including final accuracy score
+
