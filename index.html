@@ -9,14 +9,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <link rel="stylesheet" href="static/css/style.css">
-    
-    
-    <script src="../static/js/script.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <script text="javascript" src="/static/js/script.js"></script>
     <body>
         <div class="wrapper">
             <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-                <a class="navbar-brand" href="/exploratory_analysis">Exploratory analysis</a>
+                <a class="navbar-brand" href="/templates/dashboard.html">Exploratory analysis</a>
             </nav>
         </div>
         <div class="jumbotron " >
@@ -27,7 +26,7 @@
             <div class="grid-container">
               <div class="one">
                   <br>
-                  <h4> Filters</h4>
+                  <h4> Filters</h4><br>
 
                   Number of bedrooms <br>
                   <select id="bedroom" aria-label="Default select example">
@@ -121,58 +120,39 @@
 
                 <img src="../static/images/Plot Living Space vs Sale Price.jpg" style="width:100%; height:100%">
               </div>
-              <div class="five"><br> <h3>Article</h3>
+              <div class="five"><br> 
 
                 <!-- Insert here Article-->
+                <h2> Try the Filters!</h2>
+                <div class="textAt">
+                Apply the filters for the house of your desires and checkout the final price
+                </div>  
+                <br>
 
-
+                <h3>Articles about houses</h3>
+                <div style="margin-left: 50px; margin-right: 50px; font:15px">
+                  Learn more about housing market with the links below!
+                  <br><br>
+                  </div>
+                <div style="margin-left: 50px; margin-right: 50px; font:20px">
+                  <a href="https://realestate.usnews.com/real-estate/articles/what-to-expect-from-the-housing-market" class="link-success">What to Expect From the Housing Market This Summer</a>
+                  <br><br>
+                  <a href="https://fortune.com/2022/06/13/these-40-overvalued-housing-markets-could-see-15-to-20-home-price-declines-if-a-recession-hits/" class="link-success">40 overvalued housing markets</a>
+                  <br><br>
+                  <a href="https://www.forbes.com/advisor/mortgages/housing-market-predictions/" class="link-success">Housing Market Predictions 2022: Will Prices Drop In The Third Quarter?</a>
+      
+              </div>
               </div>
             </div>
             <br>
 
-
-            <br>
-
           <script>
-            function getSelectValue(){
-              var sqm = 0;
-              var bedrooms = document.getElementById("bedroom").value;
-              var bathrooms = document.getElementById("bathrooms").value;
-              var cars = document.getElementById("cars").value;
-              var condition = document.getElementById("condition").value;
-              var heatingQuality = document.getElementById("heatingQuality").value;
-              var kitchenQuality = document.getElementById("kitchenQuality").value;
-              var sqm = document.getElementById("sqm").value;
-
-
-              
-
-              totalPrice = -2012502 + (34415.2 * condition) + (111610 * heatingQuality) + (16447.7 * sqm) + (105166 * bathrooms) - (241039 * bedrooms) + (645464.5 * kitchenQuality) + (507545.2 * cars);
-              console.log(totalPrice);
-              
-
-              totalPrice = totalPrice.toLocaleString('en-US');
-              if (sqm == 0){
-                totalPrice = 0;
-                condition = 0;
-                kitchenQuality = 0;
-                heatingQuality = 0;
-              }
-              document.getElementById("description").innerHTML = "Number of Bedrooms: " + bedrooms + "<br Number of Bathrooms: " + bathrooms + "<br> Number of Cars in Garage: " + cars + "<br> House condition: " + condition + "<br> Heating Quality: " + heatingQuality + "<br> Sqm Surface: " + sqm + "<br> Kitchen Quality: " + heatingQuality + " <br> Total price: " +   totalPrice + " MXN <p>";
-              document.getElementById("price").innerHTML =  totalPrice + " MXN";
-              }
-      
-
-              
-
               var result = document.getElementById("result");
               var mine = document.getElementById("sqm");
               function change(){
                   result.innerText = mine.value + "m2";
               }
           </script>
-
-
 
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
