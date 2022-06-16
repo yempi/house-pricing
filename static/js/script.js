@@ -19,6 +19,7 @@ function getSelectValue(){
       heatingQuality = 0;
       bedrooms = 0;
       bathrooms = 0;
+      cars = 0;
     }
     document.getElementById("description").innerHTML = "Number of Bedrooms: " + bedrooms + "<br Number of Bathrooms: " + bathrooms + "<br> Number of Cars in Garage: " + cars + "<br> House condition: " + condition + "<br> Heating Quality: " + heatingQuality + "<br> Sqm Surface: " + sqm + " m2 <br> Kitchen Quality: " + heatingQuality + " <br> Total price: " +   totalPrice + " MXN <p>";
     document.getElementById("price").innerHTML =  totalPrice + " MXN";
