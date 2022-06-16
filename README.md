@@ -140,6 +140,11 @@ A presentation of this project was made in Google Slides explaining the followin
 You can access the slides by clicking [here](https://docs.google.com/presentation/d/10Qn2gBFz0FcY4KZFFshbPOlhxJnvqyFBW7iNMLnvhw0/edit?usp=sharing).
 
 # Dashboard 
+
+The dashboard was elaborated in Tableau, applying the filters mentioned before. Contains bubble plot, appearing each bubble by size according to the sqm of the house and different color depending the condition of the house. A sale price vs sqm, all of this changing with the plot at the same time. 
+
+To access the dashboard link click [here](https://yempi.github.io/house-pricing/index.html).
+
 ### Tool(s) used
 - HTML
 - JavaScript 
@@ -162,12 +167,3 @@ Display a visualization of the increase/decrease of prices according to the squa
 
 ### Storyboard
 <img width="990" alt="171526329-84ea9f74-b3b8-4bf9-9d93-51a41757508f" src="https://user-images.githubusercontent.com/83614893/171978537-7fe11c7e-1131-476f-bf2c-804a1daa733e.png">
-
-
-> Figure 1. Dashboard's Storyboard
-
-### Dashboard
-The dashboard was elaborated in Tableau, applying the filters mentioned before. Contains bubble plot, appearing each bubble by size according to the sqm of the house and different color depending the condition of the house. A sale price vs sqm, all of this changing with the plot at the same time. 
-
-To access the dashboard link click [here](https://public.tableau.com/views/HousePricing_16551057154970/HousePricingPredictor?:language=es-ES&publish=yes&:display_count=n&:origin=viz_share_link).
-
