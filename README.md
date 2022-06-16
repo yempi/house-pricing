@@ -136,6 +136,10 @@ A presentation of this project was made in Google Slides explaining the followin
 - Description of data exploration phase
 - Description of analysis phase
 - Technologies, languages, tools, and algorithms used throughout the project
+- Analysis Results
+- Dashboard
+- Recommendations for future analysis
+- Improvements to be made
 
 You can access the slides by clicking [here](https://docs.google.com/presentation/d/10Qn2gBFz0FcY4KZFFshbPOlhxJnvqyFBW7iNMLnvhw0/edit?usp=sharing).
 
